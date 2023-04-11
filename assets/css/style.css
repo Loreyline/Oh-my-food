@@ -1,10 +1,110 @@
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Shrikhand", sans-serif;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
 header {
   width: 100%;
-  height: 15rem;
+  height: 3rem;
   display: flex;
 }
 header img {
+  width: 62%;
+  margin: auto;
+}
+
+.localisation {
+  display: flex;
+  background-color: rgba(205, 205, 205, 0.9098039216);
+  justify-content: center;
+}
+
+.accroche {
+  display: flex;
+  background-color: rgba(243, 243, 243, 0.9098039216);
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.btn {
+  width: 71%;
+  border-radius: 25px;
+  height: 3rem;
+  background-image: linear-gradient(#FF79DA, 35%, #9356DC);
+  margin: 2rem auto;
+  border: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+}
+.fonctionnement-liste {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+}
+.fonctionnement-liste__chiffre {
+  background-color: #9356DC;
+  border-radius: 50%;
+  width: 30px;
+  text-align: center;
+  height: 30px;
+  margin-top: 1rem;
+  margin-right: -5%;
+  position: relative;
+  z-index: 2;
+}
+.fonctionnement-liste__chiffre p {
+  margin: 0.4rem;
+  color: white;
+}
+.fonctionnement-liste__texte {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  border-radius: 25px;
+  background-color: rgba(243, 243, 243, 0.9098039216);
+  width: 80%;
+  justify-content: space-evenly;
+  padding: 0.5rem 4%;
+}
+.fonctionnement-liste__texte .fa-store {
+  color: #9356DC;
+}
+
+.restaurants {
+  background-color: rgba(243, 243, 243, 0.9098039216);
+  padding: 5%;
+}
+.restaurants .card-restaurants {
+  background-color: white;
+  width: 95%;
+  margin: 1rem auto;
+  border-radius: 25px;
+}
+.restaurants .card-restaurants-a {
+  color: black;
+}
+.restaurants .card-restaurants-a-img img {
   width: 100%;
+  border-radius: 25px 25px 0 0;
 }
 
 /*# sourceMappingURL=style.css.map */

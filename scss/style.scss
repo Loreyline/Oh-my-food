@@ -1,9 +1,134 @@
+$family-texte: 'Roboto', sans-serif;
+$family-titre: 'Shrikhand', sans-serif;
+$gris-clair: #f3f3f3e8;
+$primaire: #9356DC;
+$secondaire: #FF79DA;
+$tertiare: #99E2D0;
+$footer-color: #333534;
+
+body {
+    margin: 0;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: $family-titre;
+}
+
+p {
+    font-family: $family-texte;
+}
+
 header {
     width: 100%;
-    height: 15rem;
+    height: 3rem;
     display: flex;
+    // box-shadow: 5px 10px 0.5em 0.5em #333534;
 
     img {
-        width: 100%;
+        width: 62%;
+        margin: auto;
+    }
+}
+
+
+
+.localisation {
+    display: flex;
+    background-color: darken($gris-clair, 15%);
+    justify-content: center;
+}
+
+.accroche {
+    display: flex;
+    background-color: $gris-clair;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.btn {
+    width: 71%;
+    border-radius: 25px;
+    height: 3rem;
+    background-image: linear-gradient($secondaire, 35%, $primaire);
+    margin: 2rem auto;
+    border: none;
+    color: white;
+    font-family: $family-texte;
+}
+
+.fonctionnement {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+
+    &-liste {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 1rem;
+
+        &__chiffre {
+            background-color: #9356DC;
+            border-radius: 50%;
+            width: 30px;
+            text-align: center;
+            height: 30px;
+            margin-top: 1rem;
+            margin-right: -5%;
+            position: relative;
+            z-index: 2;
+
+            p {
+                margin: 0.4rem;
+                color: white;
+            }
+        }
+
+        &__texte {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: row;
+            border-radius: 25px;
+            background-color: rgba(243, 243, 243, 0.9098039216);
+            width: 80%;
+            justify-content: space-evenly;
+            padding: 0.5rem 4%;
+
+
+            .fa-store {
+                color: $primaire;
+            }
+        }
+    }
+}
+
+.restaurants {
+    background-color: $gris-clair;
+    padding: 5%;
+
+    .card-restaurants {
+
+        background-color: white;
+        width: 95%;
+        margin: 1rem auto;
+        border-radius: 25px;
+
+        &-a {
+            color: black;
+
+            &-img {
+                img {
+                    width: 100%;
+                    border-radius: 25px 25px 0 0;
+                }
+            }
+        }
     }
 }
