@@ -17,6 +17,12 @@ img {
 h1,
 h6 {
     font-family: $family-titre;
+
+
+}
+
+::first-letter {
+    text-transform: capitalize;
 }
 
 a {
@@ -29,7 +35,12 @@ h3,
 h4,
 h5,
 p {
+
     font-family: $family-texte;
+
+    ::first-letter {
+        text-transform: capitalize;
+    }
 }
 
 header {
@@ -37,9 +48,10 @@ header {
     height: 3rem;
     display: flex;
     // box-shadow: 5px 10px 0.5em 0.5em #333534;
+    align-items: center;
 
     img {
-        width: 62%;
+        width: 55%;
         margin: auto;
     }
 }
@@ -70,6 +82,9 @@ header {
     border: none;
     color: white;
     font-family: $family-texte;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .fonctionnement {
