@@ -1,11 +1,12 @@
-@import "./variables.scss";
-@import "./base.scss";
+@use "./utils/variables.scss";
+@use "./utils/mixins.scss";
+@use "./base.scss";
 
-@import "./elements/buttons.scss";
-@import "./elements/coeurs.scss";
+@use "./elements/buttons.scss";
+@use "./elements/coeurs.scss";
 
-@import "./layouts/header.scss";
-@import "./layouts/footer.scss";
-@import "./layouts/image_restaurant.scss";
-@import "./layouts/carte_restaurant.scss";
-@import "./layouts/menu.scss";
+@use "./layouts/header.scss";
+@use "./layouts/footer.scss";
+@use "./layouts/image_restaurant.scss";
+@use "./layouts/carte_restaurant.scss";
+@use "./layouts/menu.scss";

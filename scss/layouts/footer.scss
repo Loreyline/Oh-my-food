@@ -1,7 +1,10 @@
+@use "../utils/variables.scss";
+
 footer {
-    background-color: $footer-color;
+    background-color: variables.$footer-color;
     display: flex;
     flex-direction: column;
+    padding-left: 6%;
 
     h6 {
         color: white;

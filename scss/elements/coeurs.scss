@@ -1,7 +1,9 @@
+@use "../utils/variables.scss";
+
 .fa-heart {
     background-color: white;
 
     &:hover {
-        background-image: $degradade-coeur;
+        background-image: variables.$degradade-coeur;
     }
 }

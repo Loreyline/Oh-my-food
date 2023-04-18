@@ -1,13 +1,13 @@
-@import "./variables.scss";
-@import "./base.scss";
+@use "./utils/variables.scss";
+@use "./utils/mixins.scss";
+@use "./base.scss";
 
-@import "./elements/buttons.scss";
-@import "./elements/coeurs.scss";
+@use "./elements/buttons.scss";
+@use "./elements/coeurs.scss";
 
-@import "./layouts/header.scss";
-@import "./layouts/footer.scss";
-@import "./layouts/localisation.scss";
-@import "./layouts/accroche.scss";
-@import "./layouts/accroche.scss";
-@import "./layouts/fonctionnement.scss";
-@import "./layouts/cards_restaurants.scss";
+@use "./layouts/header.scss";
+@use "./layouts/footer.scss";
+@use "./layouts/localisation.scss";
+@use "./layouts/accroche.scss";
+@use "./layouts/fonctionnement.scss";
+@use "./layouts/cards_restaurants.scss";

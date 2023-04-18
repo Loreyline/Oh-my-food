@@ -1,3 +1,6 @@
+@use "../utils/variables.scss";
+@use "../utils/mixins.scss";
+
 .menu {
 
     margin: -20% 0 8%;
@@ -14,7 +17,7 @@
     }
 
     &__ligne {
-        background-color: darken($tertiaire, 15%);
+        background-color: darken(variables.$tertiaire, 15%);
         width: 16%;
         height: 0.2rem;
         margin: -0.8rem 0 1rem;
@@ -28,7 +31,7 @@
     background-color: white;
     border-radius: 25px;
     align-items: center;
-    box-shadow: 0px 3px 3px 1px darken($fond-section, 10%);
+    @include mixins.shadow;
 
     &-detail {
         font-size: 18px;

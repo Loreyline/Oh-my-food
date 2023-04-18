@@ -1,6 +1,8 @@
+@use "../utils/variables.scss";
+
 .accroche {
     display: flex;
-    background-color: $fond-section;
+    background-color: variables.$fond-section;
     justify-content: center;
     flex-direction: column;
     text-align: center;

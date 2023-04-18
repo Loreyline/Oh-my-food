@@ -1,5 +1,7 @@
+@use "../utils/variables.scss";
+
 .localisation {
     display: flex;
-    background-color: darken($fond-section, 6%);
+    background-color: darken(variables.$fond-section, 6%);
     justify-content: center;
 }

@@ -65,9 +65,10 @@ header {
   width: 100%;
   height: 3rem;
   display: flex;
-  box-shadow: 0px 3px 3px 1px #414141;
+  box-shadow: 0px 3px 3px 1px #cdcdcd;
   align-items: center;
   padding: 0.5rem 0;
+  position: relative;
 }
 header img {
   width: 55%;
@@ -81,6 +82,7 @@ footer {
   background-color: #333534;
   display: flex;
   flex-direction: column;
+  padding-left: 6%;
 }
 footer h6 {
   color: white;
@@ -117,23 +119,11 @@ footer .footer__text a {
   margin: auto;
 }
 
-.accroche {
-  display: flex;
-  background-color: #f3f3f3;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  padding-bottom: 2rem;
-}
-.accroche__texte {
-  width: 70%;
-  margin: auto;
-}
-
 .fonctionnement {
   display: flex;
   flex-direction: column;
   padding-left: 5%;
+  font-weight: bold;
 }
 .fonctionnement-liste {
   display: flex;
@@ -161,7 +151,7 @@ footer .footer__text a {
   display: flex;
   flex-direction: row;
   border-radius: 25px;
-  background-color: rgba(243, 243, 243, 0.9098039216);
+  background-color: #f3f3f3;
   width: 80%;
   justify-content: space-evenly;
   padding: 0.5rem 4%;
@@ -218,7 +208,8 @@ footer .footer__text a {
   align-items: center;
 }
 .restaurants .card-restaurants-a-legend__like {
-  font-size: 30px;
+  font-size: 25px;
+  font-weight: 100;
 }
 
 /*# sourceMappingURL=style.css.map */

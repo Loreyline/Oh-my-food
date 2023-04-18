@@ -1,5 +1,7 @@
+@use "../utils/variables.scss";
+
 .carte {
-    background-color: $fond-section;
+    background-color: variables.$fond-section;
     z-index: 2;
     margin-top: -5rem;
     position: relative;

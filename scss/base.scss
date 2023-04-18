@@ -1,3 +1,5 @@
+@use "./utils/variables.scss";
+
 body {
     margin: 0;
 }
@@ -8,7 +10,7 @@ img {
 
 h1,
 h6 {
-    font-family: $family-titre;
+    font-family: variables.$family-titre;
 
 
 }
@@ -28,7 +30,7 @@ h4,
 h5,
 p {
 
-    font-family: $family-texte;
+    font-family: variables.$family-texte;
 
     ::first-letter {
         text-transform: capitalize;

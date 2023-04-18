@@ -1,5 +1,7 @@
+@use "../utils/variables.scss";
+
 .restaurants {
-    background-color: $fond-section;
+    background-color: variables.$fond-section;
     padding: 5%;
 
     .card-restaurants {
@@ -23,8 +25,8 @@
             }
 
             &-nouveau {
-                background-color: $tertiaire;
-                color: darken($tertiaire, 45%);
+                background-color: variables.$tertiaire;
+                color: darken(variables.$tertiaire, 45%);
                 width: 27%;
                 height: 1.3rem;
                 text-align: center;
@@ -51,7 +53,8 @@
                 align-items: center;
 
                 &__like {
-                    font-size: 30px;
+                    font-size: 25px;
+                    font-weight: 100;
                 }
             }
         }
