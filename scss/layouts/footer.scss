@@ -1,0 +1,23 @@
+footer {
+    background-color: $footer-color;
+    display: flex;
+    flex-direction: column;
+
+    h6 {
+        color: white;
+        font-size: 21px;
+        margin: 2%;
+        padding: 3%;
+        font-weight: 100;
+    }
+
+    .footer {
+        padding: 2%;
+        margin-left: 2%;
+
+        &__text a {
+            color: white;
+            line-height: 1.5;
+        }
+    }
+}

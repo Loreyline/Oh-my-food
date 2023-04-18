@@ -1,0 +1,45 @@
+.fonctionnement {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+
+    &-liste {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 1rem;
+
+        &__chiffre {
+            background-color: #9356DC;
+            border-radius: 50%;
+            width: 30px;
+            text-align: center;
+            height: 30px;
+            margin-top: 1rem;
+            margin-right: -5%;
+            position: relative;
+            z-index: 2;
+
+            p {
+                margin: 0.4rem;
+                color: white;
+            }
+        }
+
+        &__texte {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: row;
+            border-radius: 25px;
+            background-color: rgba(243, 243, 243, 0.9098039216);
+            width: 80%;
+            justify-content: space-evenly;
+            padding: 0.5rem 4%;
+            box-shadow: 0px 3px 3px 1px darken($fond-section, 10%);
+
+            .fa-store {
+                color: $primaire;
+            }
+        }
+    }
+}

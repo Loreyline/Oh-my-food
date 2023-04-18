@@ -1,0 +1,20 @@
+.btn {
+    width: 55%;
+    border-radius: 25px;
+    height: 3rem;
+    background-image: $degradade-btn;
+    margin: 1rem auto;
+    border: none;
+    color: white;
+    font-family: $family-texte;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transition: opacity 400ms;
+    box-shadow: 0px 3px 3px 1px darken($fond-section, 10%);
+
+    &:hover {
+        opacity: 0.7;
+    }
+
+}

@@ -35,6 +35,32 @@ p ::first-letter {
   text-transform: capitalize;
 }
 
+.btn {
+  width: 55%;
+  border-radius: 25px;
+  height: 3rem;
+  background-image: linear-gradient(#FF79DA, 35%, #9356DC);
+  margin: 1rem auto;
+  border: none;
+  color: white;
+  font-family: Roboto, sans-serif;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  transition: opacity 400ms;
+  box-shadow: 0px 3px 3px 1px #dadada;
+}
+.btn:hover {
+  opacity: 0.7;
+}
+
+.fa-heart {
+  background-color: white;
+}
+.fa-heart:hover {
+  background-image: linear-gradient(#9356DC, 35%, #FF79DA);
+}
+
 header {
   width: 100%;
   height: 3rem;
@@ -49,6 +75,27 @@ header img {
 }
 header a {
   padding-left: 5%;
+}
+
+footer {
+  background-color: #333534;
+  display: flex;
+  flex-direction: column;
+}
+footer h6 {
+  color: white;
+  font-size: 21px;
+  margin: 2%;
+  padding: 3%;
+  font-weight: 100;
+}
+footer .footer {
+  padding: 2%;
+  margin-left: 2%;
+}
+footer .footer__text a {
+  color: white;
+  line-height: 1.5;
 }
 
 .localisation {
@@ -70,23 +117,17 @@ header a {
   margin: auto;
 }
 
-.btn {
-  width: 55%;
-  border-radius: 25px;
-  height: 3rem;
-  background-image: linear-gradient(#FF79DA, 35%, #9356DC);
-  margin: 1rem auto;
-  border: none;
-  color: white;
-  font-family: Roboto, sans-serif;
-  justify-content: center;
-  align-items: center;
+.accroche {
   display: flex;
-  transition: opacity 400ms;
-  box-shadow: 0px 3px 3px 1px #dadada;
+  background-color: #f3f3f3;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 2rem;
 }
-.btn:hover {
-  opacity: 0.7;
+.accroche__texte {
+  width: 70%;
+  margin: auto;
 }
 
 .fonctionnement {
@@ -128,13 +169,6 @@ header a {
 }
 .fonctionnement-liste__texte .fa-store {
   color: #9356DC;
-}
-
-.fa-heart {
-  background-color: white;
-}
-.fa-heart:hover {
-  background-image: linear-gradient(#9356DC, 35%, #FF79DA);
 }
 
 .restaurants {
@@ -185,27 +219,6 @@ header a {
 }
 .restaurants .card-restaurants-a-legend__like {
   font-size: 30px;
-}
-
-footer {
-  background-color: #333534;
-  display: flex;
-  flex-direction: column;
-}
-footer h6 {
-  color: white;
-  font-size: 21px;
-  margin: 2%;
-  padding: 3%;
-  font-weight: 100;
-}
-footer .footer {
-  padding: 2%;
-  margin-left: 2%;
-}
-footer .footer__text a {
-  color: white;
-  line-height: 1.5;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,60 @@
+.menu {
+
+    margin: -20% 0 8%;
+    padding: 4rem 3% 2rem 3%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    h4 {
+        font-size: 25px;
+        font-weight: 100;
+        margin-bottom: 0;
+        text-transform: uppercase;
+    }
+
+    &__ligne {
+        background-color: darken($tertiaire, 15%);
+        width: 16%;
+        height: 0.2rem;
+        margin: -0.8rem 0 1rem;
+    }
+}
+
+.card-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 25px;
+    align-items: center;
+    box-shadow: 0px 3px 3px 1px darken($fond-section, 10%);
+
+    &-detail {
+        font-size: 18px;
+        padding-left: 3%;
+
+        h5 {
+            font-size: 20px;
+            margin: 1rem 0 0 0;
+        }
+
+        p {
+            margin-top: 0;
+            font-size: 16px;
+        }
+    }
+
+    &-coche {
+        display: none;
+    }
+
+    &-prix {
+        padding-right: 2%;
+        padding-top: 1.7rem;
+    }
+}
+
+.validation-menu {
+    padding-bottom: 1rem;
+}

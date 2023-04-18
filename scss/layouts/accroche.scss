@@ -1,0 +1,13 @@
+.accroche {
+    display: flex;
+    background-color: $fond-section;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 2rem;
+
+    &__texte {
+        width: 70%;
+        margin: auto;
+    }
+}
