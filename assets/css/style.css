@@ -39,11 +39,16 @@ header {
   width: 100%;
   height: 3rem;
   display: flex;
+  box-shadow: 0px 3px 3px 1px rgba(65, 65, 65, 0.9098039216);
   align-items: center;
+  padding: 0.5rem 0;
 }
 header img {
   width: 55%;
   margin: auto;
+}
+header a {
+  padding-left: 5%;
 }
 
 .localisation {
@@ -58,20 +63,30 @@ header img {
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  padding-bottom: 2rem;
+}
+.accroche__texte {
+  width: 70%;
+  margin: auto;
 }
 
 .btn {
-  width: 71%;
+  width: 55%;
   border-radius: 25px;
   height: 3rem;
   background-image: linear-gradient(#FF79DA, 35%, #9356DC);
-  margin: 2rem auto;
+  margin: 1rem auto;
   border: none;
   color: white;
   font-family: Roboto, sans-serif;
   justify-content: center;
   align-items: center;
   display: flex;
+  transition: opacity 400ms;
+  box-shadow: 0px 3px 3px 1px rgba(218, 218, 218, 0.9098039216);
+}
+.btn:hover {
+  opacity: 0.7;
 }
 
 .fonctionnement {
@@ -109,9 +124,17 @@ header img {
   width: 80%;
   justify-content: space-evenly;
   padding: 0.5rem 4%;
+  box-shadow: 0px 3px 3px 1px rgba(218, 218, 218, 0.9098039216);
 }
 .fonctionnement-liste__texte .fa-store {
   color: #9356DC;
+}
+
+.fa-heart {
+  background-color: white;
+}
+.fa-heart:hover {
+  background-image: linear-gradient(#9356DC, 35%, #FF79DA);
 }
 
 .restaurants {
@@ -148,7 +171,7 @@ header img {
   font-size: 11px;
 }
 .restaurants .card-restaurants-a-nouveau p {
-  margin: 0;
+  margin: 0.25rem;
   padding: 0;
 }
 .restaurants .card-restaurants-a-legend {
