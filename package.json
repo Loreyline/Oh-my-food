@@ -4,7 +4,8 @@
   "description": "projet 3 Ohmyfood",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "style": "sass --watch scss/style.scss assets/css/style.css",
+    "restaurant": "sass --watch scss/restaurants-style.scss assets/css/restaurants-style.css"
   },
   "repository": {
     "type": "git",

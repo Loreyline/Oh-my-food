@@ -39,7 +39,7 @@ header {
   width: 100%;
   height: 3rem;
   display: flex;
-  box-shadow: 0px 3px 3px 1px rgba(65, 65, 65, 0.9098039216);
+  box-shadow: 0px 3px 3px 1px #414141;
   align-items: center;
   padding: 0.5rem 0;
 }
@@ -53,13 +53,13 @@ header a {
 
 .localisation {
   display: flex;
-  background-color: rgba(228, 228, 228, 0.9098039216);
+  background-color: #e4e4e4;
   justify-content: center;
 }
 
 .accroche {
   display: flex;
-  background-color: rgba(243, 243, 243, 0.9098039216);
+  background-color: #f3f3f3;
   justify-content: center;
   flex-direction: column;
   text-align: center;
@@ -83,7 +83,7 @@ header a {
   align-items: center;
   display: flex;
   transition: opacity 400ms;
-  box-shadow: 0px 3px 3px 1px rgba(218, 218, 218, 0.9098039216);
+  box-shadow: 0px 3px 3px 1px #dadada;
 }
 .btn:hover {
   opacity: 0.7;
@@ -124,7 +124,7 @@ header a {
   width: 80%;
   justify-content: space-evenly;
   padding: 0.5rem 4%;
-  box-shadow: 0px 3px 3px 1px rgba(218, 218, 218, 0.9098039216);
+  box-shadow: 0px 3px 3px 1px #dadada;
 }
 .fonctionnement-liste__texte .fa-store {
   color: #9356DC;
@@ -138,7 +138,7 @@ header a {
 }
 
 .restaurants {
-  background-color: rgba(243, 243, 243, 0.9098039216);
+  background-color: #f3f3f3;
   padding: 5%;
 }
 .restaurants .card-restaurants {
