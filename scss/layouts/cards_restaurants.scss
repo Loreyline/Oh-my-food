@@ -20,43 +20,51 @@
                 img {
                     width: 100%;
                     border-radius: 25px 25px 0 0;
-                    height: 11rem;
+                    height: 9rem;
                 }
             }
 
-            &-nouveau {
-                background-color: variables.$tertiaire;
-                color: darken(variables.$tertiaire, 45%);
-                width: 27%;
-                height: 1.3rem;
-                text-align: center;
-                z-index: 2;
-                position: relative;
-                bottom: 10.5rem;
-                left: 69%;
-                margin-bottom: -1rem;
-                font-size: 11px;
 
-                p {
-                    margin: 0.25rem;
-                    padding: 0;
-                }
-            }
 
             &-legend {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: space-around;
+                padding-left: 5%;
                 line-height: 0.5;
-                justify-items: center;
-                align-items: center;
-
-                &__like {
-                    font-size: 25px;
-                    font-weight: 100;
-                }
             }
+
+
+        }
+
+        .nouveau {
+            position: relative;
+        }
+
+        .nouveau::before {
+            content: "Nouveau";
+            background-color: #99E2D0;
+            color: #217460;
+            width: 27%;
+            height: 1.3rem;
+            text-align: center;
+            z-index: 2;
+            position: absolute;
+            bottom: 12.5rem;
+            left: 69%;
+            margin-bottom: -1rem;
+            font-size: 13px;
+            padding-top: 0.2rem;
+
+            p {
+                margin: 0.25rem;
+                padding: 0;
+            }
+        }
+
+        &__like {
+            position: absolute;
+            right: 1rem;
+            transform: translateY(-180%);
+            font-size: 25px;
+            font-weight: 100;
         }
     }
 }

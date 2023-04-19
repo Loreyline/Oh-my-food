@@ -1,9 +1,26 @@
 @use "../utils/variables.scss";
 
-.fa-heart {
-    background-color: white;
+
+
+.fas {
+    color: transparent;
+    background-image: linear-gradient(variables.$primaire, variables.$secondaire);
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 0;
+    margin-left: -55%;
 
     &:hover {
-        background-image: variables.$degradade-coeur;
+        opacity: 1;
+        animation-fill-mode: forwards;
+    }
+}
+
+.nom-restaurant {
+
+    .fa-regular,
+    .fas {
+        position: absolute;
+        right: 4%;
     }
 }

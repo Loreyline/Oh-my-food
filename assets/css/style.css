@@ -35,6 +35,58 @@ p ::first-letter {
   text-transform: capitalize;
 }
 
+.loading {
+  position: fixed;
+  background-color: white;
+  height: 100vh;
+  inset: 0;
+  z-index: 3;
+  opacity: 0.9;
+  animation: loading_end 200ms 3s forwards;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+.loading span {
+  width: 4px;
+  height: 50px;
+  background: #9356DC;
+  animation: scale 0.9s ease-in-out infinite;
+}
+.loading span:nth-child(2) {
+  background: #FF79DA;
+  animation-delay: -0.8s;
+}
+.loading span:nth-child(3) {
+  background: #99E2D0;
+  animation-delay: -0.7s;
+}
+.loading span:nth-child(4) {
+  background: #9356DC;
+  animation-delay: -0.6s;
+}
+.loading span:nth-child(5) {
+  background: #FF79DA;
+  animation-delay: -0.5s;
+}
+
+@keyframes loading_end {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes scale {
+  0%, 40%, 100% {
+    transform: scaleY(0.05);
+  }
+  20% {
+    transform: scaleY(1);
+  }
+}
 .btn {
   width: 55%;
   border-radius: 25px;
@@ -54,11 +106,23 @@ p ::first-letter {
   opacity: 0.7;
 }
 
-.fa-heart {
-  background-color: white;
+.fas {
+  color: transparent;
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  margin-left: -55%;
 }
-.fa-heart:hover {
-  background-image: linear-gradient(#9356DC, 35%, #FF79DA);
+.fas:hover {
+  opacity: 1;
+  animation-fill-mode: forwards;
+}
+
+.nom-restaurant .fa-regular,
+.nom-restaurant .fas {
+  position: absolute;
+  right: 4%;
 }
 
 header {
@@ -115,7 +179,7 @@ footer .footer__text a {
   padding-bottom: 2rem;
 }
 .accroche__texte {
-  width: 70%;
+  width: 90%;
   margin: auto;
 }
 
@@ -179,35 +243,38 @@ footer .footer__text a {
 .restaurants .card-restaurants-a-img img {
   width: 100%;
   border-radius: 25px 25px 0 0;
-  height: 11rem;
+  height: 9rem;
 }
-.restaurants .card-restaurants-a-nouveau {
+.restaurants .card-restaurants-a-legend {
+  padding-left: 5%;
+  line-height: 0.5;
+}
+.restaurants .card-restaurants .nouveau {
+  position: relative;
+}
+.restaurants .card-restaurants .nouveau::before {
+  content: "Nouveau";
   background-color: #99E2D0;
   color: #217460;
   width: 27%;
   height: 1.3rem;
   text-align: center;
   z-index: 2;
-  position: relative;
-  bottom: 10.5rem;
+  position: absolute;
+  bottom: 12.5rem;
   left: 69%;
   margin-bottom: -1rem;
-  font-size: 11px;
+  font-size: 13px;
+  padding-top: 0.2rem;
 }
-.restaurants .card-restaurants-a-nouveau p {
+.restaurants .card-restaurants .nouveau::before p {
   margin: 0.25rem;
   padding: 0;
 }
-.restaurants .card-restaurants-a-legend {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  line-height: 0.5;
-  justify-items: center;
-  align-items: center;
-}
-.restaurants .card-restaurants-a-legend__like {
+.restaurants .card-restaurants__like {
+  position: absolute;
+  right: 1rem;
+  transform: translateY(-180%);
   font-size: 25px;
   font-weight: 100;
 }
