@@ -13,11 +13,13 @@
     justify-content: center;
     align-items: center;
     display: flex;
-    transition: opacity 400ms;
+    transition: all 400ms;
     @include mixins.shadow;
+
 
     &:hover {
         opacity: 0.7;
+        box-shadow: 0 0 0.3em 0.3em #{adjust-hue(darken(variables.$fond-section, 15%), 180deg)};
     }
 
 }

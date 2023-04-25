@@ -4,7 +4,7 @@
 .menu {
 
     margin: -20% 0 8%;
-    padding: 4rem 3% 2rem 3%;
+    padding: 2rem 1% 2rem 1%;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -27,36 +27,68 @@
 .card-menu {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     background-color: white;
     border-radius: 25px;
     align-items: center;
     @include mixins.shadow;
+    overflow: hidden;
 
     &-detail {
-        font-size: 18px;
         padding-left: 3%;
 
         h5 {
-            font-size: 20px;
+            font-size: 16px;
             margin: 1rem 0 0 0;
         }
 
         p {
+
             margin-top: 0;
-            font-size: 16px;
+            font-size: 14px;
+
         }
     }
 
     &-coche {
-        display: none;
+        margin-right: -24%;
+        background-color: variables.$tertiaire;
+        width: 23%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        border-radius: 0 25px 25px 0;
+        height: 5rem;
+
+        &-icone {
+            font-size: 31px;
+            color: #99E2D0;
+            background-color: white;
+            border-radius: 50%;
+            height: 2rem;
+        }
     }
 
+
     &-prix {
-        padding-right: 2%;
+        padding-right: 3%;
         padding-top: 1.7rem;
+        margin-left: auto;
+        font-weight: bold;
+    }
+
+    &:hover &-coche {
+
+        margin-right: 0;
+    }
+
+    &:hover &-detail p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 70%;
     }
 }
+
 
 .validation-menu {
     padding-bottom: 1rem;
