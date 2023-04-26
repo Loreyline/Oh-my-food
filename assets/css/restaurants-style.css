@@ -4,6 +4,7 @@ body {
 
 img {
   object-fit: cover;
+  object-position: 50% 105%;
 }
 
 h1,
@@ -104,7 +105,7 @@ p ::first-letter {
 }
 .btn:hover {
   opacity: 0.7;
-  box-shadow: 0 0 0.3em 0.3em #cdcdcd;
+  box-shadow: 0 0.1em 0.3em 0.3em #cdcdcd;
 }
 
 .fas {
@@ -114,6 +115,7 @@ p ::first-letter {
   -webkit-background-clip: text;
   opacity: 0;
   margin-left: -55%;
+  transition: all 400ms;
 }
 .fas:hover {
   opacity: 1;
@@ -171,7 +173,8 @@ footer .footer__text a {
 }
 .img-restaurant img {
   width: 100%;
-  height: 25rem;
+  height: 19rem;
+  object-position: 33% 53%;
 }
 
 .carte {
@@ -201,7 +204,8 @@ footer .footer__text a {
   gap: 1rem;
 }
 .menu h4 {
-  font-size: 25px;
+  font-size: 23px;
+  padding-left: 3%;
   font-weight: 100;
   margin-bottom: 0;
   text-transform: uppercase;
@@ -210,7 +214,7 @@ footer .footer__text a {
   background-color: #5dd1b5;
   width: 16%;
   height: 0.2rem;
-  margin: -0.8rem 0 1rem;
+  margin: -0.8rem 3% 1rem;
 }
 
 .card-menu {
@@ -224,6 +228,7 @@ footer .footer__text a {
 }
 .card-menu-detail {
   padding-left: 3%;
+  width: 62%;
 }
 .card-menu-detail h5 {
   font-size: 16px;
@@ -242,6 +247,7 @@ footer .footer__text a {
   display: flex;
   border-radius: 0 25px 25px 0;
   height: 5rem;
+  transition: all 400ms;
 }
 .card-menu-coche-icone {
   font-size: 31px;
@@ -251,7 +257,7 @@ footer .footer__text a {
   height: 2rem;
 }
 .card-menu-prix {
-  padding-right: 3%;
+  padding-right: 7%;
   padding-top: 1.7rem;
   margin-left: auto;
   font-weight: bold;
@@ -259,7 +265,8 @@ footer .footer__text a {
 .card-menu:hover .card-menu-coche {
   margin-right: 0;
 }
-.card-menu:hover .card-menu-detail p {
+.card-menu:hover .card-menu-detail p,
+.card-menu h5 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;

@@ -10,7 +10,8 @@
     gap: 1rem;
 
     h4 {
-        font-size: 25px;
+        font-size: 23px;
+        padding-left: 3%;
         font-weight: 100;
         margin-bottom: 0;
         text-transform: uppercase;
@@ -20,7 +21,8 @@
         background-color: darken(variables.$tertiaire, 15%);
         width: 16%;
         height: 0.2rem;
-        margin: -0.8rem 0 1rem;
+        margin: -0.8rem 3% 1rem;
+
     }
 }
 
@@ -35,6 +37,7 @@
 
     &-detail {
         padding-left: 3%;
+        width: 62%;
 
         h5 {
             font-size: 16px;
@@ -58,6 +61,7 @@
         display: flex;
         border-radius: 0 25px 25px 0;
         height: 5rem;
+        transition: all 400ms;
 
         &-icone {
             font-size: 31px;
@@ -66,11 +70,12 @@
             border-radius: 50%;
             height: 2rem;
         }
+
     }
 
 
     &-prix {
-        padding-right: 3%;
+        padding-right: 7%;
         padding-top: 1.7rem;
         margin-left: auto;
         font-weight: bold;
@@ -81,7 +86,8 @@
         margin-right: 0;
     }
 
-    &:hover &-detail p {
+    &:hover &-detail p,
+    h5 {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;

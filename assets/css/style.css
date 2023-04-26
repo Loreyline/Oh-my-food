@@ -4,6 +4,7 @@ body {
 
 img {
   object-fit: cover;
+  object-position: 50% 105%;
 }
 
 h1,
@@ -104,7 +105,7 @@ p ::first-letter {
 }
 .btn:hover {
   opacity: 0.7;
-  box-shadow: 0 0 0.3em 0.3em #cdcdcd;
+  box-shadow: 0 0.1em 0.3em 0.3em #cdcdcd;
 }
 
 .fas {
@@ -114,6 +115,7 @@ p ::first-letter {
   -webkit-background-clip: text;
   opacity: 0;
   margin-left: -55%;
+  transition: all 400ms;
 }
 .fas:hover {
   opacity: 1;
@@ -183,6 +185,11 @@ footer .footer__text a {
   width: 90%;
   margin: auto;
 }
+.accroche__texte h2 {
+  width: 80%;
+  margin: auto;
+  padding-top: 2rem;
+}
 
 .fonctionnement {
   display: flex;
@@ -244,7 +251,7 @@ footer .footer__text a {
 .restaurants .card-restaurants-a-img img {
   width: 100%;
   border-radius: 25px 25px 0 0;
-  height: 9rem;
+  height: 9.6rem;
 }
 .restaurants .card-restaurants-a-legend {
   padding-left: 5%;
@@ -278,6 +285,10 @@ footer .footer__text a {
   transform: translateY(-180%);
   font-size: 25px;
   font-weight: 100;
+}
+
+.img-note {
+  object-position: 50% 60%;
 }
 
 /*# sourceMappingURL=style.css.map */
