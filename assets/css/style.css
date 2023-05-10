@@ -115,7 +115,7 @@ p ::first-letter {
   -webkit-background-clip: text;
   opacity: 0;
   margin-left: -55%;
-  transition: all 400ms;
+  transition: all 800ms;
 }
 .fas:hover {
   opacity: 1;
@@ -145,6 +145,11 @@ header a {
   padding-left: 5%;
 }
 
+@media (min-width: 530px) {
+  header img {
+    width: 40%;
+  }
+}
 footer {
   background-color: #333534;
   display: flex;
@@ -233,6 +238,28 @@ footer .footer__text a {
   color: #9356DC;
 }
 
+@media (min-width: 530px) {
+  .fonctionnement {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .fonctionnement h2 {
+    width: 100%;
+  }
+  .fonctionnement-liste {
+    width: 40%;
+    padding-right: 5%;
+  }
+  .fonctionnement-liste__texte {
+    width: 80%;
+    padding: 0 9%;
+  }
+  .fonctionnement-liste__texte p {
+    padding-left: 7%;
+    font-size: 15px;
+  }
+}
 .restaurants {
   background-color: #f3f3f3;
   padding: 5%;
@@ -289,6 +316,30 @@ footer .footer__text a {
 
 .img-note {
   object-position: 50% 60%;
+}
+
+@media (min-width: 530px) {
+  .restaurants {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .restaurants h2 {
+    width: 100%;
+  }
+  .restaurants .card-restaurants {
+    width: 45%;
+  }
+  .restaurants .card-restaurants__like1 {
+    right: 50%;
+    transform: translateY(-140%);
+    font-size: 22px;
+  }
+  .restaurants .card-restaurants__like2 {
+    right: 5%;
+    transform: translateY(-140%);
+    font-size: 22px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

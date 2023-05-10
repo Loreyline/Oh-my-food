@@ -18,3 +18,11 @@ header {
         padding-left: 5%;
     }
 }
+
+@media (min-width: 530px) {
+    header {
+        img {
+            width: 40%;
+        }
+    }
+}

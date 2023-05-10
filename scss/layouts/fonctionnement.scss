@@ -47,3 +47,32 @@
         }
     }
 }
+
+@media (min-width: 530px) {
+
+    .fonctionnement {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        h2 {
+            width: 100%;
+        }
+
+        &-liste {
+            width: 40%;
+            padding-right: 5%;
+
+            &__texte {
+                width: 80%;
+                padding: 0 9%;
+
+                p {
+                    padding-left: 7%;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+}

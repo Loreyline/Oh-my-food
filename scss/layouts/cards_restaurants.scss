@@ -72,3 +72,34 @@
 .img-note {
     object-position: 50% 60%;
 }
+
+@media (min-width:530px) {
+    .restaurants {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        h2 {
+            width: 100%;
+        }
+
+        .card-restaurants {
+            width: 45%;
+
+
+            &__like1 {
+                right: 50%;
+                transform: translateY(-140%);
+                font-size: 22px;
+            }
+
+
+
+            &__like2 {
+                right: 5%;
+                transform: translateY(-140%);
+                font-size: 22px;
+            }
+        }
+    }
+}
