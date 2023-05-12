@@ -22,3 +22,20 @@
     padding: 0 7% 0rem 3%;
 
 }
+
+@media (min-width: 920px) {
+    .carte {
+
+        width: 75%;
+        margin: auto;
+        margin-top: -2rem;
+
+        .nom-restaurant {
+            justify-content: center;
+
+            .coeur {
+                right: 30%;
+            }
+        }
+    }
+}

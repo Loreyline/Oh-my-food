@@ -26,3 +26,27 @@ header {
         }
     }
 }
+
+@media (min-width: 670px) {
+    header {
+        img {
+            width: 30%;
+        }
+
+        a {
+            padding-left: 2%;
+        }
+    }
+}
+
+@media (min-width: 920px) {
+    header {
+        img {
+            width: 20%;
+        }
+
+        a {
+            padding-left: 1%;
+        }
+    }
+}

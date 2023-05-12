@@ -9,9 +9,9 @@ footer {
     h6 {
         color: white;
         font-size: 21px;
-        margin: 2%;
         padding: 3%;
         font-weight: 100;
+        margin: 2% 2% 2% 2%;
     }
 
     .footer {
@@ -22,5 +22,25 @@ footer {
             color: white;
             line-height: 1.5;
         }
+    }
+}
+
+@media (min-width: 920px) {
+    footer {
+        flex-direction: row-reverse;
+        justify-content: right;
+        align-items: end;
+
+        h6 {
+            padding: 2rem 2rem 0 0;
+        }
+
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        gap: 3%;
+        width: 55%;
     }
 }

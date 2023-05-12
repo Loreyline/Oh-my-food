@@ -108,6 +108,11 @@ p ::first-letter {
   box-shadow: 0 0.1em 0.3em 0.3em #cdcdcd;
 }
 
+@media (min-width: 920px) {
+  .btn {
+    width: 20%;
+  }
+}
 .fas {
   color: transparent;
   background-image: linear-gradient(#9356DC, #FF79DA);
@@ -150,6 +155,22 @@ header a {
     width: 40%;
   }
 }
+@media (min-width: 670px) {
+  header img {
+    width: 30%;
+  }
+  header a {
+    padding-left: 2%;
+  }
+}
+@media (min-width: 920px) {
+  header img {
+    width: 20%;
+  }
+  header a {
+    padding-left: 1%;
+  }
+}
 footer {
   background-color: #333534;
   display: flex;
@@ -159,9 +180,9 @@ footer {
 footer h6 {
   color: white;
   font-size: 21px;
-  margin: 2%;
   padding: 3%;
   font-weight: 100;
+  margin: 2% 2% 2% 2%;
 }
 footer .footer {
   padding: 2%;
@@ -172,6 +193,22 @@ footer .footer__text a {
   line-height: 1.5;
 }
 
+@media (min-width: 920px) {
+  footer {
+    flex-direction: row-reverse;
+    justify-content: right;
+    align-items: end;
+  }
+  footer h6 {
+    padding: 2rem 2rem 0 0;
+  }
+  .footer {
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+    width: 55%;
+  }
+}
 .img-restaurant {
   z-index: 1;
   position: relative;
@@ -201,6 +238,19 @@ footer .footer__text a {
   padding: 0 7% 0rem 3%;
 }
 
+@media (min-width: 920px) {
+  .carte {
+    width: 75%;
+    margin: auto;
+    margin-top: -2rem;
+  }
+  .carte .nom-restaurant {
+    justify-content: center;
+  }
+  .carte .nom-restaurant .coeur {
+    right: 30%;
+  }
+}
 @keyframes slide {
   from {
     margin-left: 100%;
@@ -304,6 +354,13 @@ footer .footer__text a {
 @media (min-width: 530px) {
   .menu {
     margin-top: -8%;
+  }
+}
+@media (min-width: 920px) {
+  .menu {
+    width: 70%;
+    margin: auto;
+    margin-top: -4rem;
   }
 }
 

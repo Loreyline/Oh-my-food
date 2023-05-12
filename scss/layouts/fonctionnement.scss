@@ -63,6 +63,8 @@
             width: 40%;
             padding-right: 5%;
 
+
+
             &__texte {
                 width: 80%;
                 padding: 0 9%;
@@ -70,6 +72,45 @@
                 p {
                     padding-left: 7%;
                     font-size: 15px;
+                }
+            }
+        }
+    }
+
+}
+
+@media (min-width: 920px) {
+
+    .fonctionnement {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+
+        h2 {
+            width: 100%;
+        }
+
+        &-liste {
+            width: 28%;
+
+            &__chiffre {
+                height: 25px;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                margin-top: 0.5rem;
+                font-size: 12px;
+            }
+
+            &__texte {
+                width: 100%;
+
+                p {
+                    font-size: 12px;
                 }
             }
         }

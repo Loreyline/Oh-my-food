@@ -108,6 +108,11 @@ p ::first-letter {
   box-shadow: 0 0.1em 0.3em 0.3em #cdcdcd;
 }
 
+@media (min-width: 920px) {
+  .btn {
+    width: 20%;
+  }
+}
 .fas {
   color: transparent;
   background-image: linear-gradient(#9356DC, #FF79DA);
@@ -150,6 +155,22 @@ header a {
     width: 40%;
   }
 }
+@media (min-width: 670px) {
+  header img {
+    width: 30%;
+  }
+  header a {
+    padding-left: 2%;
+  }
+}
+@media (min-width: 920px) {
+  header img {
+    width: 20%;
+  }
+  header a {
+    padding-left: 1%;
+  }
+}
 footer {
   background-color: #333534;
   display: flex;
@@ -159,9 +180,9 @@ footer {
 footer h6 {
   color: white;
   font-size: 21px;
-  margin: 2%;
   padding: 3%;
   font-weight: 100;
+  margin: 2% 2% 2% 2%;
 }
 footer .footer {
   padding: 2%;
@@ -172,6 +193,22 @@ footer .footer__text a {
   line-height: 1.5;
 }
 
+@media (min-width: 920px) {
+  footer {
+    flex-direction: row-reverse;
+    justify-content: right;
+    align-items: end;
+  }
+  footer h6 {
+    padding: 2rem 2rem 0 0;
+  }
+  .footer {
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+    width: 55%;
+  }
+}
 .localisation {
   display: flex;
   background-color: #e4e4e4;
@@ -260,6 +297,37 @@ footer .footer__text a {
     font-size: 15px;
   }
 }
+@media (min-width: 920px) {
+  .fonctionnement {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+  .fonctionnement h2 {
+    width: 100%;
+  }
+  .fonctionnement-liste {
+    width: 28%;
+  }
+  .fonctionnement-liste__chiffre {
+    height: 25px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+    font-size: 12px;
+  }
+  .fonctionnement-liste__texte {
+    width: 100%;
+  }
+  .fonctionnement-liste__texte p {
+    font-size: 12px;
+  }
+}
 .restaurants {
   background-color: #f3f3f3;
   padding: 5%;
@@ -339,6 +407,40 @@ footer .footer__text a {
     right: 5%;
     transform: translateY(-140%);
     font-size: 22px;
+  }
+}
+@media (min-width: 920px) {
+  .restaurants h2 {
+    margin-left: 8%;
+  }
+  .restaurants .card-restaurants {
+    width: 39%;
+    margin-left: 7%;
+    margin-top: 2rem;
+    height: 11rem;
+  }
+  .restaurants .card-restaurants__like1 {
+    right: 52%;
+    font-size: 20px;
+  }
+  .restaurants .card-restaurants__like2 {
+    right: 7%;
+    font-size: 20px;
+  }
+  .restaurants .card-restaurants-a-img img {
+    height: 7.4rem;
+    object-position: 33% 69%;
+  }
+  .restaurants .card-restaurants-a-img .img-note {
+    object-position: 50% 56%;
+  }
+  .restaurants .card-restaurants-a-legend {
+    line-height: 0.3;
+    font-size: 13px;
+  }
+  .restaurants .card-restaurants .nouveau::before {
+    bottom: 9.5rem;
+    left: 70%;
   }
 }
 

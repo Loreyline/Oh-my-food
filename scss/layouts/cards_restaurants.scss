@@ -86,14 +86,11 @@
         .card-restaurants {
             width: 45%;
 
-
             &__like1 {
                 right: 50%;
                 transform: translateY(-140%);
                 font-size: 22px;
             }
-
-
 
             &__like2 {
                 right: 5%;
@@ -102,4 +99,55 @@
             }
         }
     }
+}
+
+@media (min-width: 920px) {
+    .restaurants {
+
+        h2 {
+            margin-left: 8%;
+        }
+
+        .card-restaurants {
+            width: 39%;
+            margin-left: 7%;
+            margin-top: 2rem;
+            height: 11rem;
+
+            &__like1 {
+                right: 52%;
+                font-size: 20px;
+            }
+
+            &__like2 {
+                right: 7%;
+                font-size: 20px;
+            }
+
+            &-a {
+                &-img {
+                    img {
+                        height: 7.4rem;
+                        object-position: 33% 69%;
+                    }
+
+                    .img-note {
+                        object-position: 50% 56%;
+                    }
+                }
+
+
+                &-legend {
+                    line-height: 0.3;
+                    font-size: 13px;
+                }
+            }
+
+            .nouveau::before {
+                bottom: 9.5rem;
+                left: 70%;
+            }
+        }
+    }
+
 }
