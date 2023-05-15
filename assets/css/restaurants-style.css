@@ -209,6 +209,11 @@ footer .footer__text a {
     width: 55%;
   }
 }
+@media (min-width: 1440px) {
+  footer .footer {
+    margin-left: 42%;
+  }
+}
 .img-restaurant {
   z-index: 1;
   position: relative;

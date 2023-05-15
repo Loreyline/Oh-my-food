@@ -44,3 +44,11 @@ footer {
         width: 55%;
     }
 }
+
+@media (min-width:1440px) {
+    footer {
+        .footer {
+            margin-left: 42%;
+        }
+    }
+}

@@ -151,3 +151,32 @@
     }
 
 }
+
+@media (min-width:1440px) {
+    .restaurants {
+        .card-restaurants {
+            height: 13rem;
+
+            &__like1 {
+                right: 53%;
+            }
+
+            &__like2 {
+                right: 8%;
+            }
+
+            &-a {
+                &-img {
+                    img {
+                        height: 9.4rem;
+                    }
+
+                }
+            }
+
+            .nouveau::before {
+                bottom: 11.5rem;
+            }
+        }
+    }
+}

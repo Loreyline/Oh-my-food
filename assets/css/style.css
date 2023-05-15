@@ -209,6 +209,11 @@ footer .footer__text a {
     width: 55%;
   }
 }
+@media (min-width: 1440px) {
+  footer .footer {
+    margin-left: 42%;
+  }
+}
 .localisation {
   display: flex;
   background-color: #e4e4e4;
@@ -441,6 +446,23 @@ footer .footer__text a {
   .restaurants .card-restaurants .nouveau::before {
     bottom: 9.5rem;
     left: 70%;
+  }
+}
+@media (min-width: 1440px) {
+  .restaurants .card-restaurants {
+    height: 13rem;
+  }
+  .restaurants .card-restaurants__like1 {
+    right: 53%;
+  }
+  .restaurants .card-restaurants__like2 {
+    right: 8%;
+  }
+  .restaurants .card-restaurants-a-img img {
+    height: 9.4rem;
+  }
+  .restaurants .card-restaurants .nouveau::before {
+    bottom: 11.5rem;
   }
 }
 
