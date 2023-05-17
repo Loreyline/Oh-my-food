@@ -115,5 +115,41 @@
             }
         }
     }
+}
 
+@media (min-width:1440px) {
+    .fonctionnement {
+        &-liste {
+            &__chiffre {
+                height: 30px;
+                width: 36px;
+            }
+
+            &__texte {
+                height: 3rem;
+                align-items: center;
+                justify-content: flex-start;
+            }
+        }
+    }
+}
+
+@media (min-width:1920px) {
+    .fonctionnement {
+        &-liste {
+            &__chiffre {
+                margin-top: 1rem;
+                margin-right: -3%;
+                font-size: 15px;
+            }
+
+            &__texte {
+                height: 4rem;
+
+                p {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
 }

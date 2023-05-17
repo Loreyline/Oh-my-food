@@ -155,7 +155,7 @@
 @media (min-width:1440px) {
     .restaurants {
         .card-restaurants {
-            height: 13rem;
+            height: 14rem;
 
             &__like1 {
                 right: 53%;
@@ -168,14 +168,34 @@
             &-a {
                 &-img {
                     img {
-                        height: 9.4rem;
+                        height: 10.4rem;
                     }
 
                 }
             }
 
             .nouveau::before {
-                bottom: 11.5rem;
+                bottom: 12.5rem;
+            }
+        }
+    }
+}
+
+@media (min-width:1920px) {
+    .restaurants {
+        .card-restaurants {
+            height: 16rem;
+
+            &-a {
+                &-img {
+                    img {
+                        height: 12.4rem;
+                    }
+                }
+            }
+
+            .nouveau::before {
+                bottom: 14.5rem;
             }
         }
     }

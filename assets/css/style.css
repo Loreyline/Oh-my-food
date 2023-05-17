@@ -127,6 +127,10 @@ p ::first-letter {
   animation-fill-mode: forwards;
 }
 
+.fa-regular:hover {
+  opacity: 0;
+}
+
 .nom-restaurant .fa-regular,
 .nom-restaurant .fas {
   position: absolute;
@@ -171,6 +175,22 @@ header a {
     padding-left: 1%;
   }
 }
+@media (min-width: 1440px) {
+  header {
+    height: 4rem;
+  }
+  header img {
+    width: 15%;
+  }
+}
+@media (min-width: 1920px) {
+  header {
+    height: 5rem;
+  }
+  header img {
+    width: 10%;
+  }
+}
 footer {
   background-color: #333534;
   display: flex;
@@ -201,6 +221,7 @@ footer .footer__text a {
   }
   footer h6 {
     padding: 2rem 2rem 0 0;
+    font-size: 16px;
   }
   .footer {
     display: flex;
@@ -210,8 +231,16 @@ footer .footer__text a {
   }
 }
 @media (min-width: 1440px) {
+  footer h6 {
+    padding: 2rem 0 0 0;
+  }
   footer .footer {
-    margin-left: 42%;
+    margin-left: 45%;
+  }
+}
+@media (min-width: 1920px) {
+  footer .footer {
+    margin-left: 57%;
   }
 }
 .localisation {
@@ -333,6 +362,30 @@ footer .footer__text a {
     font-size: 12px;
   }
 }
+@media (min-width: 1440px) {
+  .fonctionnement-liste__chiffre {
+    height: 30px;
+    width: 36px;
+  }
+  .fonctionnement-liste__texte {
+    height: 3rem;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+@media (min-width: 1920px) {
+  .fonctionnement-liste__chiffre {
+    margin-top: 1rem;
+    margin-right: -3%;
+    font-size: 15px;
+  }
+  .fonctionnement-liste__texte {
+    height: 4rem;
+  }
+  .fonctionnement-liste__texte p {
+    font-size: 15px;
+  }
+}
 .restaurants {
   background-color: #f3f3f3;
   padding: 5%;
@@ -450,7 +503,7 @@ footer .footer__text a {
 }
 @media (min-width: 1440px) {
   .restaurants .card-restaurants {
-    height: 13rem;
+    height: 14rem;
   }
   .restaurants .card-restaurants__like1 {
     right: 53%;
@@ -459,10 +512,21 @@ footer .footer__text a {
     right: 8%;
   }
   .restaurants .card-restaurants-a-img img {
-    height: 9.4rem;
+    height: 10.4rem;
   }
   .restaurants .card-restaurants .nouveau::before {
-    bottom: 11.5rem;
+    bottom: 12.5rem;
+  }
+}
+@media (min-width: 1920px) {
+  .restaurants .card-restaurants {
+    height: 16rem;
+  }
+  .restaurants .card-restaurants-a-img img {
+    height: 12.4rem;
+  }
+  .restaurants .card-restaurants .nouveau::before {
+    bottom: 14.5rem;
   }
 }
 

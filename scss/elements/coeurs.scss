@@ -17,6 +17,14 @@
     }
 }
 
+.fa-regular {
+
+    &:hover {
+        opacity: 0;
+
+    }
+}
+
 .nom-restaurant {
 
     .fa-regular,
