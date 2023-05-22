@@ -33,3 +33,13 @@
         right: 4%;
     }
 }
+
+.coeurs {
+
+    &:hover {
+        .fas {
+            opacity: 1;
+            animation-fill-mode: forwards;
+        }
+    }
+}
