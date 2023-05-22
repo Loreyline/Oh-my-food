@@ -324,6 +324,7 @@ footer .footer__text a {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  z-index: -1;
 }
 .menu h4 {
   font-size: 23px;
