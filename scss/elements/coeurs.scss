@@ -1,7 +1,5 @@
 @use "../utils/variables.scss";
 
-
-
 .fas {
     color: transparent;
     background-image: linear-gradient(variables.$primaire, variables.$secondaire);
@@ -21,7 +19,6 @@
 
     &:hover {
         opacity: 0;
-
     }
 }
 

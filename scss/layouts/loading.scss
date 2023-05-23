@@ -8,22 +8,16 @@
     z-index: 3;
     opacity: 0.9;
     animation: loading_end 200ms 3s forwards;
-
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     gap: 6px;
-
-
 
     span {
         width: 4px;
         height: 50px;
         background: variables.$primaire;
         animation: scale 0.9s ease-in-out infinite;
-
 
         &:nth-child(2) {
             background: variables.$secondaire;
@@ -45,7 +39,6 @@
             animation-delay: -0.5s;
         }
     }
-
 }
 
 @keyframes loading_end {
