@@ -25,7 +25,6 @@
 
 @media (min-width: 920px) {
     .carte {
-
         width: 75%;
         margin: auto;
         margin-top: -2rem;
@@ -34,7 +33,9 @@
             justify-content: center;
 
             .coeur {
-                right: 30%;
+                position: absolute;
+                right: 27%;
+                top: 2.3rem;
             }
         }
     }
@@ -42,8 +43,6 @@
 
 @media (min-width: 1440px) {
     .coeurs {
-        position: absolute;
-        right: 40%;
-        top: 2.3rem;
+        right: 36%;
     }
 }
